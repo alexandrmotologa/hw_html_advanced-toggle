@@ -28,28 +28,28 @@
             margin-left: 15px;
             padding-left: 14px;
         }
-        .text:before{
+        .text::before{
             content: "Off";
             color:red;
             padding-right: 4px;
 
 
         }
-        .toggle-input:checked ~ .text:after{
+        .toggle-input:checked ~ .text::after{
             content: "";
             color:green;
             display: inline-block;
         }  
-        .toggle-input:checked ~ .text:before{
+        .toggle-input:checked ~ .text::before{
             content: "";
         }
-        .toggle-input:checked ~ .text:after{
+        .toggle-input:checked ~ .text::after{
             content: "On";
             color:green;
 
             
         }
-        .text:after{
+        .text::after{
             left: 100%;
             margin-left: -58px;
             margin-right: 30px;
